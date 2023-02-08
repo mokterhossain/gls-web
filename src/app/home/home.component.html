@@ -1,0 +1,977 @@
+    <div class="bt-vertical-header-top">
+        <div class="bt-vertical-menu-trigger"  (click)="toggleClass($event,'btMenuVerticalOn')">&nbsp;<div class="bt_bb_icon" data-bt-override-class="{}"><a data-ico-fa="&#xf0c9;" class="bt_bb_icon_holder"></a></div>
+        </div>
+
+        <div class="bt-logo-area">
+            <div class="logo">
+                <span>
+                    <a href="/">
+                        <img class="btMainLogo" src="../../assets/img/logo-3.png">
+                        <!-- <img class="btMainLogo"
+                            data-hw="1.9722222222222"
+                            src="http://Guardian Lab Services.bold-themes.com/lab-s/wp-content/uploads/sites/9/2019/02/logo_black.png"
+                            alt="Lab S"><img class="btAltLogo"
+                            src="http://Guardian Lab Services.bold-themes.com/lab-s/wp-content/uploads/sites/9/2020/06/logo.png"
+                            alt="Lab S"> -->
+                        </a> </span>
+            </div><!-- /logo -->
+        </div><!-- /bt-logo-area -->
+    </div>
+    <header class="mainHeader btClear gutter ">
+        <div class="main-header-inner">
+            <div class="bt-logo-area menu-holder btClear">
+                <div class="port">
+                    <div class="bt-horizontal-menu-trigger">&nbsp;<div class="bt_bb_icon"><a href="#" target="_self"
+                                class="bt_bb_icon_holder"></a></div>
+                    </div>
+                    <div class="logo">
+                        <span>
+                            <a href="/">
+                                <img width="150" src="../../assets/img/logo-3.png">
+                                <!-- <img class="btMainLogo"
+                                            data-hw="1.9722222222222"
+                                            src="http://Guardian Lab Services.bold-themes.com/lab-s/wp-content/uploads/sites/9/2019/02/logo_black.png"
+                                            alt="Lab S"><img class="btAltLogo"
+                                            src="http://Guardian Lab Services.bold-themes.com/lab-s/wp-content/uploads/sites/9/2020/06/logo.png"
+                                            alt="Lab S"> -->
+                            </a> </span>
+                    </div><!-- /logo -->
+                    <div class="menuPort">
+                        <div class="topBarInMenu">
+                            <div class="topBarInMenuCell">
+                                <!-- <div
+                                    class="btButtonWidget  btFilledButton  btButtonWeight_semi-bold  btAccentLightButton  btWithLink">
+                                    <a style="cursor: pointer;" (click)="goToPage('contactus')" target="_self"
+                                        class="btButtonWidgetLink">
+                                        <div class="btButtonWidgetContent">
+                                            <span class="btButtonWidgetText">Free
+                                                Quotation
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div> -->
+                            </div><!-- /topBarInMenu -->
+                        </div><!-- /topBarInMenuCell -->
+                        <nav>
+                            <ul id="menu-primary-menu" class="menu">
+                                <li id="menu-item-2130"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1538 current_page_item menu-item-2130">
+                                    <a href="/" aria-current="page">Home</a>
+                                </li>
+                                <li id="liService" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2131"  (mouseenter)="enter($event)" (mouseleave)="leave($event)"  [ngClass]="{'on': toggle}">
+                                    <div class="subToggler" (click)="subToggler($event)"></div>
+                                    <a style="cursor: pointer;" (click)="goToPage('services')">Services</a>
+                                    <ul class="sub-menu" [style.display]="isSubToggler ? 'block' : 'none'">
+                                        <li id="menu-item-2137"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2137">
+                                            <a style="cursor: pointer;" (click)="goToPage('services')">Bulk Asbestos
+                                                Identification</a>
+                                        </li>
+                                        <li id="menu-item-2132"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2132">
+                                            <a style="cursor: pointer;" (click)="goToPage('services')">Airborne
+                                                Asbestos Fiber
+                                                Counting</a>
+                                        </li>
+                                        <li id="menu-item-2951"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2951">
+                                            <a style="cursor: pointer;" (click)="goToPage('services')">Mold</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-2133"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                    <a style="cursor: pointer;" (click)="goToPage('faq')">FAQ</a>
+                                </li>
+                                <li id="menu-item-2133"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                    <a style="cursor: pointer;" (click)="goToPage('cocforms')">COC Forms Page</a>
+                                </li>
+                                <li id="menu-item-2133"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                    <a style="cursor: pointer;" (click)="goToPage('aboutus')">About Us</a>
+                                </li>
+                                <li id="menu-item-2133"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                    <a style="cursor: pointer;" (click)="goToPage('contactus')">Contact Us</a>
+                                </li>
+                                <li id="menu-item-2133"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                    <a href="https://www.calgary.ca/csps/cema/covid19/response-to-coronavirus.html" target="_blank">COVID-19 Updates</a>
+                                </li>		
+                            </ul>
+                        </nav>
+                    </div><!-- .menuPort -->
+                </div><!-- /port -->
+            </div><!-- /menu-holder / bt-below-logo-area -->
+        </div><!-- / inner header for scrolling -->
+    </header><!-- /.mainHeader -->
+    <div class="bt-content-wrap btClear">
+        <div class="bt-content-holder">
+
+            <div class="bt-content">
+                
+                <div class="bt_bb_wrapper">
+                    
+                    <section id="bt_bb_section60c2351fd16f4" data-parallax="0.7" data-parallax-offset="0"
+                        class="bt_bb_section bt_bb_color_scheme_6 bt_bb_layout_boxed_1200 bt_bb_full_screen bt_bb_vertical_align_middle bt_bb_parallax bt_bb_background_image bt_bb_section_allow_content_outside"
+                        style="background-image:url(&#039;../../assets/img/background.jpg&#039;);z-index: 3;;background-color:#0e3791;">
+                        
+                        <div class="bt_bb_port">
+                            <div class="bt_bb_cell">
+                                <div class="bt_bb_cell_inner">
+                                    <div class="bt_bb_row_wrapper">
+                                        <div class="bt_bb_row">
+                                            
+                                            <div class="bt_bb_column col-xl-12 bt_bb_align_left bt_bb_vertical_align_middle bt_bb_padding_normal bt_bb_animation_fade_in animated"
+                                                style="position: relative;" data-width="12"
+                                                data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
+                                                        
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_font_weight_lighter bt_bb_dash_none bt_bb_size_extralarge bt_bb_superheadline bt_bb_align_inherit"
+                                                            style="z-index: 4;" data-bt-override-class="{}">
+                                                            <h1 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_superheadline" style="text-transform: uppercase; font-size: 32px;">{{homeContent[0]?.banner_headline}}</span><span
+                                                                    class="bt_bb_headline_content"><span>{{homeContent[0]?.banner_content}}</span></span></h1>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                        </div>
+                                                        <!-- <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_6 bt_bb_style_outline_thin bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                            style="z-index: 4; position: relative;"
+                                                            data-bt-override-class="{}"><a style="cursor: pointer;" (click)="goToPage('aboutus')"
+                                                                target="_self" class="bt_bb_link"
+                                                                title="About us"><span
+                                                                    class="bt_bb_button_text">About us</span></a>
+                                                        </div> -->
+                                                        <!-- <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_6 bt_bb_style_filled bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                            style="z-index: 4; position: relative;"
+                                                            data-bt-override-class="{}"><a
+                                                                href="http://Guardian Lab Services.bold-themes.com/lab-s/about-us/contact/"
+                                                                target="_self" class="bt_bb_link"
+                                                                title="Schedule via email"><span
+                                                                    class="bt_bb_button_text">Schedule via
+                                                                    email</span><span
+                                                                    data-ico-fontawesome5solid="&#xf274;"
+                                                                    class="bt_bb_icon_holder"></span></a></div> -->
+                                                        <div class="bt_bb_floating_image btLabSHomeHeroImage bt_bb_shape_hexagon bt_bb_floating_image_horizontal_position_left bt_bb_floating_image_vertical_position_bottom bt_bb_floating_image_animation_delay_default bt_bb_floating_image_animation_duration_default bt_bb_floating_image_animation_style_ease_out bt_bb_hidden_xs bt_bb_hidden_ms bt_bb_hidden_sm"
+                                                            data-speed="1.0">
+                                                            <div class="bt_bb_floating_image_image"
+                                                                data-speed="1.0">
+                                                                <div class="bt_bb_image bt_bb_shape_hexagon">
+                                                                    <span><img
+                                                                            src="../../assets/img/home_hero_detail.jpg"
+                                                                            data-full_image_src="../../assets/img/home_hero_detail.jpg"
+                                                                            title="home_hero_detail"
+                                                                            alt="../../assets/img/home_hero_detail.jpg"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="bt_bb_section60c2351fd2536" data-parallax="0.7" data-parallax-offset="0"
+                        data-background_image_src="'../../assets/img/background_02.png'"
+                        class="bt_bb_section bt_bb_top_spacing_large bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_parallax btLazyLoadBackground bt_bb_background_image bt_bb_background_overlay_accent_bottom_gradient"
+                        style="background-image:url(&#039;../../assets/img/blank.gif&#039;);;background-color:#03175b;">
+                        <div class="bt_bb_port">
+                            <div class="bt_bb_cell">
+                                <div class="bt_bb_cell_inner">
+                                    <div class="bt_bb_row_wrapper">
+                                        <div class="bt_bb_row">
+                                            <div class="bt_bb_column col-xl-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="12" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_font_weight_lighter bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_large bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h3 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>Our
+                                                                        Expertise</span></span></h3>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bt_bb_row_wrapper">
+                                        <div class="bt_bb_row bt_bb_column_gap_15">
+                                            <div class="bt_bb_column col-xl-4 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animated"
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <div
+                                                            class="bt_bb_card_image bt_bb_style_hexagon bt_bb_size_small">
+                                                            <div class="bt_bb_card_image_background">
+                                                                <div class="bt_bb_image bt_bb_shape_hexagon">
+                                                                    <span><img
+                                                                            src="../../assets/img/2260101807_7c9b16f870_o.jpg"
+                                                                            data-full_image_src="../../assets/img/2260101807_7c9b16f870_o.jpg"
+                                                                            title="Bulk Asbestos Identification"
+                                                                            alt="Bulk Asbestos Identification"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bt_bb_card_image_text_box">
+                                                                <div class="bt_bb_card_image_title">
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_size_small bt_bb_superheadline"
+                                                                        data-bt-override-class="{}">
+                                                                        <h3 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Bulk Asbestos Identification</span><span
+                                                                                class="bt_bb_headline_content"><span>Bulk Asbestos Identification - Polarized Light Microscopy (PLM) EPA/600/R-93/116</span></span></h3>
+                                                                    </header>
+                                                                </div>
+                                                                <div class="bt_bb_card_image_text">Examination of bulk samples for asbestos content is conducted in accordance
+                                                                    with EPA/600/R-93/116 or EPA/600/M4-82-020 methodologies using polarized
+                                                                    light microscopy (PLM).
+                                                                    <br><br><br>
+                                                                </div>
+                                                                <div class="bt_bb_card_image_content_inner">
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-4 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animated"
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <div
+                                                            class="bt_bb_card_image bt_bb_style_hexagon bt_bb_size_small">
+                                                            <div class="bt_bb_card_image_background">
+                                                                <div class="bt_bb_image bt_bb_shape_hexagon">
+                                                                    <span><img
+                                                                            src="../../assets/img/blank.gif"
+                                                                            data-full_image_src="../../assets/img/asbestos-benefit-2.jpg"
+                                                                            data-image_src="../../assets/img/asbestos-benefit-2.jpg"
+                                                                            title="Clinical Immunology Laboratory"
+                                                                            alt="Clinical Immunology Laboratory"
+                                                                            class="btLazyLoadImage"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bt_bb_card_image_text_box">
+                                                                <div class="bt_bb_card_image_title">
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_size_small bt_bb_superheadline"
+                                                                        data-bt-override-class="{}">
+                                                                        <h3 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Airborne Asbestos Fiber Counting</span><span
+                                                                                class="bt_bb_headline_content"><span>Airborne Asbestos Fiber Counting - Phase Contrast Microscopy (PCM) NIOSH 7400</span></span></h3>
+                                                                    </header>
+                                                                </div>
+                                                                <div class="bt_bb_card_image_text">Airborne fibre counting analysis is conducted in accordance with The National
+                                                                    Institute for Occupational Safety and Health (NIOSH) Method 7400 and analysed
+                                                                    by phase contrast microscopy (PCM).</div>
+                                                                <div class="bt_bb_card_image_content_inner">
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-4 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animated"
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <div
+                                                            class="bt_bb_card_image bt_bb_style_hexagon bt_bb_size_small">
+                                                            <div class="bt_bb_card_image_background">
+                                                                <div class="bt_bb_image bt_bb_shape_hexagon">
+                                                                    <span><img
+                                                                            src="../../assets/img/blank.gif"
+                                                                            data-full_image_src="../../assets/img/Alternaria1.JPG"
+                                                                            data-image_src="../../assets/img/Alternaria1.JPG"
+                                                                            title="Clinical Microbiology Laboratory"
+                                                                            alt="Clinical Microbiology Laboratory"
+                                                                            class="btLazyLoadImage"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bt_bb_card_image_text_box">
+                                                                <div class="bt_bb_card_image_title">
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_size_small bt_bb_superheadline"
+                                                                        data-bt-override-class="{}">
+                                                                        <h3 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Mold</span><span
+                                                                                class="bt_bb_headline_content"><span>Analysis of Fungal Spore &amp; Particulate by Optical
+                                                                                    Microscopy</span></span></h3>
+                                                                    </header>
+                                                                </div>
+                                                                <div class="bt_bb_card_image_text">Analysis of Fungal Spore &amp; Particulate involves spore counting and identification
+                                                                    of different categories of mold spores. Mold samples can include air samples,
+                                                                    surface samples such as swabs, bulk samples (pieces of material, dust or
+                                                                    liquids), tape lift, and contact plates.</div>
+                                                                <div class="bt_bb_card_image_content_inner">
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <div
+                                                            class="bt_bb_card_image bt_bb_style_hexagon bt_bb_size_small">
+                                                            <div class="bt_bb_card_image_background">
+                                                                <div class="bt_bb_image bt_bb_shape_hexagon">
+                                                                    <span><img
+                                                                            src="../../assets/img/blank.gif"
+                                                                            data-full_image_src="../../assets/img/service_4.jpg"
+                                                                            data-image_src="../../assets/img/service_4.jpg"
+                                                                            title="Molecular Diagnostics Laboratory"
+                                                                            alt="Molecular Diagnostics Laboratory"
+                                                                            class="btLazyLoadImage"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bt_bb_card_image_text_box">
+                                                                <div class="bt_bb_card_image_title">
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_size_small bt_bb_superheadline"
+                                                                        data-bt-override-class="{}">
+                                                                        <h3 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Mold Spore Tape</span><span
+                                                                                class="bt_bb_headline_content"><span>Mold Spore Tape</span></span></h3>
+                                                                    </header>
+                                                                </div>
+                                                                <div class="bt_bb_card_image_text">Mold testing involves analysis of samples collected from residential and commercial properties. Samples for mold testing include air for either viable or non-viable analysis and surface samples such as swabs, bulk (pieces of material, dust or liquids), tape lift, and contact plates. Non-viable (total spore count) Analysis. Samples include Air-O-Cell..
+                                                                </div>
+                                                                <div class="bt_bb_card_image_content_inner">
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="bt_bb_row_wrapper">
+                                        <div class="bt_bb_row">
+                                            <div class="bt_bb_column col-xl-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="12" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_normal btWithText bt_bb_border_style_solid bt_bb_border_color_light">
+                                                            <span class="bt_bb_separator_text">Hours of Operation</span>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bt_bb_row_wrapper">
+                                        <div class="bt_bb_row">
+                                            <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="2" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h4 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>Mon</span></span>
+                                                            </h4>
+                                                            <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="2" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h4 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>Tue</span></span>
+                                                            </h4>
+                                                            <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="2" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h4 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>Wed</span></span>
+                                                            </h4>
+                                                            <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="2" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h4 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>Thu</span></span>
+                                                            </h4>
+                                                            <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="2" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h4 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>Fri</span></span>
+                                                            </h4>
+                                                            <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="2" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h4 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>Sat -
+                                                                        Sun</span></span></h4>
+                                                            <div class="bt_bb_headline_subheadline">ON CALL</div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="bt_bb_section60c2351fd43df" data-parallax="0.5" data-parallax-offset="0"
+                        class="bt_bb_section bt_bb_color_scheme_16 bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_parallax">
+                        <div class="bt_bb_port">
+                            <div class="bt_bb_cell">
+                                <div class="bt_bb_cell_inner">
+                                    <div
+                                        class="bt_bb_row_wrapper bt_bb_row_width_boxed_1200 bt_bb_row_push_right bt_bb_row_push_left bt_bb_content_wide">
+                                        <div
+                                            class="bt_bb_row bt_bb_animation_fade_in bt_bb_animation_move_left animate bt_bb_animation_fade_in move_left animate">
+                                            <div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_details_right bt_bb_details-color_white"
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner"></div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-6 bt_bb_align_left bt_bb_vertical_align_middle bt_bb_padding_20"
+                                                style="background-color:rgba(255, 255, 255, 1);" data-width="6"
+                                                data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_dash_none bt_bb_size_normal bt_bb_superheadline bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h3 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_superheadline">ABOUT
+                                                                    US</span><span
+                                                                    class="bt_bb_headline_content">
+                                                                    <span>
+                                                                        <!-- Over 20
+                                                                        Years of Experience. We'll Ensure You Always
+                                                                        Get the Best Possible Results -->
+                                                                        Guardian Lab Services has been providing quality laboratory testing for home-owners, home inspectors, independent contractors and realtors since 2017.
+                                                                    </span></span>
+                                                            </h3>
+                                                            <div class="bt_bb_headline_subheadline">
+                                                                Quality control is monitored quarterly through interlaboratory and intralaboratory comparison as well as
+proficiency testing administered by the Canadian Association for Laboratory
+Accreditation (CALA) which is an internationally recognized accreditation for
+laboratories. Guardian Lab Services is accredited under CALA Membership Number
+4133
+                                                                <!-- Our processes
+                                                                will be tailored to best fit your needs, and we will
+                                                                assist you by answering your questions and helping
+                                                                to define your goals. -->
+                                                            </div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                        </div>
+                                                        <div class="bt_bb_text">
+                                                            <!-- <p>Guardian Lab Services has been providing quality laboratory testing for home-owners, home inspectors, independent
+                                                                contractors and realtors since 2017. Quality control is monitored quarterly through proficiency testing
+                                                                administered by the Canadian Association for Laboratory Accreditation (CALA) which is an internationally
+                                                                recognized accreditation for laboratories. Guardian Lab Services is accredited under CALA Membership Number
+                                                                17025.</p> -->
+                                                                <p>Final results are confidentially reported to
+                                                                    clients. At Guardian Lab we provide the highest quality of service with competitive
+                                                                    pricing.</p>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                        </div>
+                                                        <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_4 bt_bb_style_outline_thin bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                            data-bt-override-class="{}"><a style="cursor: pointer;" (click)="goToPage('aboutus')"
+                                                                target="_self" class="bt_bb_link"
+                                                                title="More About Guardian Lab Services"><span
+                                                                    class="bt_bb_button_text">More About
+                                                                    Guardian Lab Services</span></a></div>
+                                                        <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_3 bt_bb_style_underline bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                            data-bt-override-class="{}"><a
+                                                                href="http://www.caladirectory.ca/lab_info.php?mId=4133&amp;wId=s"
+                                                                target="_blank" class="bt_bb_link"
+                                                                title="ISO 17025 CALA accredited Laboratory."><span
+                                                                    class="bt_bb_button_text">ISO 17025 CALA accredited Laboratory.</span></a></div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_column_background_image bt_bb_details_left-inner bt_bb_details-color_white"
+                                                style="background-image:url(&#039;../../assets/img/inner_experience_01.jpg&#039;);"
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="bt_bb_section60c2351fd4fb6" data-parallax="0.7" data-parallax-offset="0"
+                        data-background_image_src="'../../assets/img/background_02.png'"
+                        class="bt_bb_section bt_bb_color_scheme_1 bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_parallax btLazyLoadBackground bt_bb_background_image bt_bb_background_overlay_accent_bottom_gradient"
+                        style="background-image:url(&#039;../../assets/img/blank.gif&#039;);background: linear-gradient(0deg, rgba(1,84,179,1) 0%, rgba(3,23,91,1) 50%);;background-color:#03175b;">
+                        <div class="bt_bb_port">
+                            <div class="bt_bb_cell">
+                                <div class="bt_bb_cell_inner">
+                                    <div
+                                        class="bt_bb_row_wrapper bt_bb_row_width_boxed_1200 bt_bb_row_push_right bt_bb_row_push_left bt_bb_content_wide">
+                                        <div
+                                            class="bt_bb_row bt_bb_animation_fade_in bt_bb_animation_move_right animate bt_bb_animation_fade_in move_right animate">
+                                            <div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal btLazyLoadBackground bt_bb_column_background_image bt_bb_hidden_xs bt_bb_details_right-inner bt_bb_details-color_grey"
+                                                style="background-image:url(&#039;../../assets/img/blank.gif&#039;);"
+                                                data-background_image_src='../../assets/img/inner_experience_02.jpg'
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner"></div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-6 bt_bb_color_scheme_16 bt_bb_align_left bt_bb_vertical_align_middle bt_bb_padding_20 bt_bb_details-color_white"
+                                                data-width="6" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_dash_none bt_bb_size_normal bt_bb_superheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h3 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_superheadline">BENEFITS</span><span
+                                                                    class="bt_bb_headline_content"><span>
+                                                                        <!-- Dedicated
+                                                                        to Providing Quality Laboratory
+                                                                        Services -->
+                                                                        Our fully accredited services include:
+                                                                    </span></span></h3>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                        <div class="bt_bb_row_inner">
+                                                            <div class="bt_bb_column_inner col-xl-6 bt_bb_align_left bt_bb_vertical_align_top"
+                                                                data-width="6" data-bt-override-class="{}">
+                                                                <div class="bt_bb_column_inner_content">
+                                                                    <div class="bt_bb_icon bt_bb_color_scheme_5 bt_bb_style_borderless bt_bb_size_xlarge bt_bb_shape_circle bt_bb_align_inherit bt_bb_text_size_small"
+                                                                        data-bt-override-class="{}"><span
+                                                                            data-ico-chemistry="&#xf10a;"
+                                                                            class="bt_bb_icon_holder"></span></div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}">
+                                                                        <h4 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_content"><span>Bulk Asbestos Analysis EPA/600/R-93/116</span></span></h4>
+                                                                    </header>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_extra_small bt_bb_border_style_none bt_bb_border_color_none">
+                                                                    </div>
+                                                                    <div class="bt_bb_text">
+                                                                        <p>Trust the experts at Guardian Lab Services to carry out
+                                                                            difficult projects.</p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_extra_small bt_bb_border_style_none bt_bb_border_color_none">
+                                                                    </div>
+                                                                    <!-- <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_3 bt_bb_style_underline bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}">
+                                                                        <a style="cursor: pointer;" (click)="goToPage('aboutus')"
+                                                                            target="_self" class="bt_bb_link"
+                                                                            title="Find out more"><span
+                                                                                class="bt_bb_button_text">Find out
+                                                                                more</span></a>
+                                                                            </div> -->
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <div class="bt_bb_icon bt_bb_color_scheme_5 bt_bb_style_borderless bt_bb_size_xlarge bt_bb_shape_circle bt_bb_align_inherit bt_bb_text_size_small"
+                                                                        data-bt-override-class="{}"><span
+                                                                            data-ico-chemistry="&#xf124;"
+                                                                            class="bt_bb_icon_holder"></span></div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}">
+                                                                        <h4 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_content"><span>Asbestos Airborne Fiber Counting NIOSH 7400</span></span>
+                                                                        </h4>
+                                                                    </header>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <div class="bt_bb_text">
+                                                                        <p>Guardian Lab Services is equipped to support rigorous
+                                                                            quality standards.</p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <!-- <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_3 bt_bb_style_underline bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}"><a style="cursor: pointer;" (click)="goToPage('aboutus')"
+                                                                            target="_self" class="bt_bb_link"
+                                                                            title="Find out more"><span
+                                                                                class="bt_bb_button_text">Find out
+                                                                                more</span></a></div> -->
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bt_bb_column_inner col-xl-6 bt_bb_align_left bt_bb_vertical_align_top"
+                                                                data-width="6" data-bt-override-class="{}">
+                                                                <div class="bt_bb_column_inner_content">
+                                                                    <div class="bt_bb_icon bt_bb_color_scheme_5 bt_bb_style_borderless bt_bb_size_xlarge bt_bb_shape_circle bt_bb_align_inherit bt_bb_text_size_small"
+                                                                        data-bt-override-class="{}"><span
+                                                                            data-ico-chemistry="&#xf129;"
+                                                                            class="bt_bb_icon_holder"></span></div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_extra_small bt_bb_border_style_none bt_bb_border_color_none">
+                                                                    </div>
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}">
+                                                                        <h4 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_content"><span>Mold – Bulk and Spore Trap Analysis – AIHA</span></span></h4>
+                                                                    </header>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <div class="bt_bb_text">
+                                                                        <p>At Guardian Lab Services you can be confident you are
+                                                                            receiving quality results.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_extra_small bt_bb_border_style_none bt_bb_border_color_none">
+                                                                    </div>
+                                                                    <!-- <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_3 bt_bb_style_underline bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}"><a style="cursor: pointer;" (click)="goToPage('aboutus')"
+                                                                            target="_self" class="bt_bb_link"
+                                                                            title="Find out more"><span
+                                                                                class="bt_bb_button_text">Find out
+                                                                                more</span></a></div> -->
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <div class="bt_bb_icon bt_bb_color_scheme_5 bt_bb_style_borderless bt_bb_size_xlarge bt_bb_shape_circle bt_bb_align_inherit bt_bb_text_size_small"
+                                                                        data-bt-override-class="{}"><span
+                                                                            data-ico-chemistry="&#xf108;"
+                                                                            class="bt_bb_icon_holder"></span></div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <header
+                                                                        class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}">
+                                                                        <h4 class="bt_bb_headline_tag"><span
+                                                                                class="bt_bb_headline_content"><span>Quick Turnaround</span></span></h4>
+                                                                    </header>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <div class="bt_bb_text">
+                                                                        <p>Turnaround Times include: 24 hours, 6 hours, and 3 Hours.</p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none">
+                                                                    </div>
+                                                                    <!-- <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_3 bt_bb_style_underline bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                                                        data-bt-override-class="{}"><a style="cursor: pointer;" (click)="goToPage('aboutus')"
+                                                                            target="_self" class="bt_bb_link"
+                                                                            title="Find out more"><span
+                                                                                class="bt_bb_button_text">Find out
+                                                                                more</span></a></div> -->
+                                                                    <div
+                                                                        class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none bt_bb_border_color_none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_details_left bt_bb_details-color_grey"
+                                                data-width="3" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="bt_bb_section60c2351fd43df" data-parallax="0.5" data-parallax-offset="0"
+							class="bt_bb_section bt_bb_color_scheme_16 bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_parallax">
+							<div class="bt_bb_port">
+								<div class="bt_bb_cell">
+									<div class="bt_bb_cell_inner">
+										<div
+											class="bt_bb_row_wrapper bt_bb_row_width_boxed_1200 bt_bb_row_push_right bt_bb_row_push_left bt_bb_content_wide">
+											<div
+												class="bt_bb_row bt_bb_animation_fade_in bt_bb_animation_move_left animate bt_bb_animation_fade_in move_left animate">
+												<div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_details_right bt_bb_details-color_white"
+													data-width="3" data-bt-override-class="{}">
+													<div class="bt_bb_column_content">
+														<div class="bt_bb_column_content_inner"></div>
+													</div>
+												</div>
+												<!-- <div class="bt_bb_column col-xl-6 bt_bb_align_left bt_bb_vertical_align_middle bt_bb_padding_20"
+													style="background-color:rgba(255, 255, 255, 1);" data-width="6"
+													data-bt-override-class="{}">
+													<div class="bt_bb_column_content">
+														<div class="bt_bb_column_content_inner">
+															<div
+																class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none bt_bb_border_color_none">
+															</div>
+															<header
+																class="bt_bb_headline bt_bb_dash_none bt_bb_size_normal bt_bb_superheadline bt_bb_align_inherit"
+																data-bt-override-class="{}">
+																<h3 class="bt_bb_headline_tag"><span
+																		class="bt_bb_headline_superheadline">CONTACT
+																		US</span><span
+																		class="bt_bb_headline_content"><span>Contact us today for a no-obligation quote</span></span></h3>
+															</header>
+															<div
+																class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+															</div>
+															<div class="bt_bb_contact_form_7">
+																<div role="form" class="wpcf7" id="wpcf7-f3079-p1538-o1"
+																	lang="en-US" dir="ltr">
+																	<div class="screen-reader-response">
+																		<p role="status" aria-live="polite"
+																			aria-atomic="true"></p>
+																		<ul></ul>
+																	</div>
+																	<form action="javascript:void(0);"
+																		method="post" class="wpcf7-form init"
+																		novalidate="novalidate" data-status="init">
+																		<div style="display: none;">
+																			<input type="hidden" name="_wpcf7"
+																				value="3079" />
+																			<input type="hidden" name="_wpcf7_version"
+																				value="5.4.1" />
+																			<input type="hidden" name="_wpcf7_locale"
+																				value="en_US" />
+																			<input type="hidden" name="_wpcf7_unit_tag"
+																				value="wpcf7-f3079-p1538-o1" />
+																			<input type="hidden"
+																				name="_wpcf7_container_post"
+																				value="1538" />
+																			<input type="hidden"
+																				name="_wpcf7_posted_data_hash"
+																				value="" />
+																			<input type="hidden"
+																				name="_wpcf7_recaptcha_response"
+																				value="" />
+																		</div>
+																		<div class="btRequest">
+																			<div class="btRequestFlex">
+																				<div class="btRequestFlexLeft">
+																					<div class="btRequestLabel">Name
+																						(required)*</div>
+																					<div class="btRequestInput"><span
+																							class="wpcf7-form-control-wrap your-name"><input
+																								type="text"
+																								name="name"
+                                                                                                id="name"
+																								value="" size="40"
+																								class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+																								aria-required="true"
+																								aria-invalid="false" /></span>
+																					</div>
+																				</div>
+																				<div class="btRequestFlexLeft">
+																					<div class="btRequestLabel">Email
+																						(required)*</div>
+																					<div class="btRequestInput"><span
+																							class="wpcf7-form-control-wrap your-email"><input
+																								type="email"
+																								name="email"
+                                                                                                id="email"
+																								value="" size="40"
+																								class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+																								aria-required="true"
+																								aria-invalid="false" /></span>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="btRequestLabel">Service
+																				(required)*</div>
+																			<div class="btRequestInput"><span
+																					class="wpcf7-form-control-wrap your-subject"><input
+																						type="text" name="subject"
+                                                                                        id="subject"
+																						value="" size="40"
+																						class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+																						aria-required="true"
+																						aria-invalid="false" /></span>
+																			</div>
+																			<div class="btRequestLabel">Message</div>
+																			<div class="btRequestInput"><span
+																					class="wpcf7-form-control-wrap your-message"><textarea
+																						name="message" cols="40"
+                                                                                        id="message"
+																						rows="10"
+																						class="wpcf7-form-control wpcf7-textarea"
+																						aria-invalid="false"></textarea></span>
+																			</div>
+																			<div class="btRequestButton">
+                                                                                <input
+																					type="submit" value="Send Request"
+																					class="wpcf7-form-control wpcf7-submit" />
+																			</div>
+																		</div>
+																		<div class="wpcf7-response-output"
+																			aria-hidden="true"></div>
+																	</form>
+																</div>
+															</div>
+															<div
+																class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none bt_bb_border_color_none">
+															</div>
+														</div>
+													</div>
+												</div> -->
+												<div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_column_background_image bt_bb_details_left-inner bt_bb_details-color_white"
+													style="background-image:url(&#039;../../assets/img/inner_contact_01.jpg&#039;);"
+													data-width="3" data-bt-override-class="{}">
+													<div class="bt_bb_column_content">
+														<div class="bt_bb_column_content_inner"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    

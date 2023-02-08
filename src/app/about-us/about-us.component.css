@@ -1,0 +1,13 @@
+.btPageHeadline {
+    background-color: #156cf0;
+}
+html[data-bt_bb_screen_resolution="xl"].bt_bb_backgroud_fixed_supported .bt_bb_section.bt_bb_background_image.bt_bb_parallax {
+    background-attachment: fixed;
+}
+.bt-content-wrap {
+    transition: transform 1s cubic-bezier(.230,1,.320,1);
+}
+.btPageHeadline .bt_bb_port {
+    padding-bottom: 4em;
+    padding-top: 8em;
+}

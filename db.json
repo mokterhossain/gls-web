@@ -1,0 +1,68 @@
+{
+  "home-content": [
+    {
+      "banner_headline": "ISO 17025 CALA  ACCREDITED LABORATORY",
+      "banner_content": "Bulk Asbestos (PLM), Fiber Count (PCM) and Mold (Spore Trap) Testing..",
+      "Our_Expertise": [
+        {
+          "expertise_1": {
+            "name": "BULK ASBESTOS IDENTIFICATION",
+            "title": "Bulk Asbestos Identification - Polarized Light Microscopy (PLM) EPA/600/R-93/116",
+            "content": "Examination of bulk samples for asbestos content is conducted in accordance with EPA/600/R-93/116 or EPA/600/M4-82-020 methodologies using polarized light microscopy (PLM)."
+          },
+          "expertise_2": {
+            "name": "AIRBORNE ASBESTOS FIBER COUNTING",
+            "title": "Airborne Asbestos Fiber Counting - Phase Contrast Microscopy (PCM) NIOSH 7400",
+            "content": "Airborne fibre counting analysis is conducted in accordance with The National Institute for Occupational Safety and Health (NIOSH) Method 7400 and analysed by phase contrast microscopy (PCM)."
+          },
+          "expertise_3": {
+            "name": "MOLD",
+            "title": "Analysis of Fungal Spore & Particulate by Optical Microscopy",
+            "content": "Analysis of Fungal Spore & Particulate involves spore counting and identification of different categories of mold spores. Mold samples can include air samples, surface samples such as swabs, bulk samples (pieces of material, dust or liquids), tape lift, and contact plates."
+          }
+        }
+      ],
+      "hours_of_operation": [
+        {
+          "title": "Mon",
+          "operation_hour": "08:00am - 5:00pm"
+        },
+        {
+          "title": "Tue",
+          "operation_hour": "08:00am - 5:00pm"
+        },
+        {
+          "title": "Wed",
+          "operation_hour": "08:00am - 5:00pm"
+        },
+        {
+          "title": "Thu",
+          "operation_hour": "08:00am - 5:00pm"
+        },
+        {
+          "title": "Fri",
+          "operation_hour": "08:00am - 5:00pm"
+        },
+        {
+          "title": "Sat - Sun",
+          "operation_hour": "ON CALL"
+        }
+      ],
+      "about_us": {
+        "title": "Guardian Lab Services has been providing quality laboratory testing for home-owners, home inspectors, independent contractors and realtors since 2017.",
+        "sub_title": "Quality control is monitored quarterly through interlaboratory and intralaboratory comparison as well as proficiency testing administered by the Canadian Association for Laboratory Accreditation (CALA) which is an internationally recognized accreditation for laboratories. Guardian Lab Services is accredited under CALA Membership Number 4133",
+        "content": "Final results are confidentially reported to clients. At Guardian Lab we provide the highest quality of service with competitive pricing."
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

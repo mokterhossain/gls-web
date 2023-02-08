@@ -1,0 +1,19 @@
+.btPageHeadline {
+    background-color: #156cf0;
+}
+html[data-bt_bb_screen_resolution="xl"].bt_bb_backgroud_fixed_supported .bt_bb_section.bt_bb_background_image.bt_bb_parallax {
+    background-attachment: fixed;
+}
+.bt-content-wrap {
+    transition: transform 1s cubic-bezier(.230,1,.320,1);
+}
+.btPageHeadline .bt_bb_port {
+    padding-bottom: 4em;
+    padding-top: 8em;
+}
+.bt_bb_row_wrapper.bt_bb_row_width_boxed_1200 .bt_bb_row .bt_bb_column[data-width="6"] {
+    -webkit-flex: 0 0 670.001px;
+    -ms-flex: 0 0 670.001px;
+    flex: 0 0 670.001px;
+    max-width: 670.001px;
+    }

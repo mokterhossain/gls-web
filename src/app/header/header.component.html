@@ -1,0 +1,96 @@
+<div class="bt-vertical-header-top">
+    <div class="bt-vertical-menu-trigger" (click)="toggleClass($event,'btMenuVerticalOn')">&nbsp;<div class="bt_bb_icon" data-bt-override-class="{}"><a href="#"
+                target="_self" data-ico-fa="&#xf0c9;" class="bt_bb_icon_holder"></a></div>
+    </div>
+
+    <div class="bt-logo-area">
+        <div class="logo">
+            <span>
+                <a href="/"><img class="btMainLogo" data-hw="2.1875"
+                        src="../../assets/img/logo-3.png"
+                        alt="Guardian Lab Services"></a> </span>
+        </div><!-- /logo -->
+    </div><!-- /bt-logo-area -->
+</div>
+<header class="mainHeader btClear gutter ">
+    <div class="main-header-inner">
+        <div class="bt-logo-area menu-holder btClear">
+            <div class="port">
+                <div class="bt-horizontal-menu-trigger" (click)="toggleClass($event,'btMenuVerticalOn')">&nbsp;<div class="bt_bb_icon"><a href="#" target="_self"
+                            class="bt_bb_icon_holder"></a></div>
+                </div>
+                <div class="logo">
+                    <span>
+                        <a href="/"><img class="btMainLogo" data-hw="2.1875"
+                                src="../../assets/img/logo-3.png"
+                                alt="Guardian Lab Services"></a> </span>
+                </div><!-- /logo -->
+                <div class="menuPort">
+                    <div class="topBarInMenu">
+                        <!-- <div class="topBarInMenuCell">
+                            <div
+                                class="btButtonWidget  btFilledButton  btButtonWeight_semi-bold  btLightAccentButton  btWithLink">
+                                <a style="cursor: pointer;" (click)="goToPage('contactus')"
+                                    class="btButtonWidgetLink">
+                                    <div class="btButtonWidgetContent">
+                                        <span class="btButtonWidgetText">Free
+                                            Quotation</span>
+                                        </div>
+                                </a></div>
+                        </div> -->
+                        <!-- /topBarInMenu -->
+                    </div><!-- /topBarInMenuCell -->
+                    <nav>
+                        <ul id="menu-primary-menu" class="menu">
+                            <li id="menu-item-2130"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1538 current_page_item menu-item-2130">
+                                <a href="/" aria-current="page">Home</a>
+                            </li>
+                            <li id="liService" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2131"  (mouseenter)="enter($event)" (mouseleave)="leave($event)"  [ngClass]="{'on': toggle}">
+                                <div class="subToggler" (click)="subToggler($event)"></div>
+                                <a style="cursor: pointer;" (click)="goToPage('services')">Services</a>
+                                <ul class="sub-menu" [style.display]="isSubToggler ? 'block' : 'none'">
+                                    <li id="menu-item-2137"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2137">
+                                        <a style="cursor: pointer;" (click)="goToPage('services')">Bulk Asbestos
+                                            Identification</a>
+                                    </li>
+                                    <li id="menu-item-2132"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2132">
+                                        <a style="cursor: pointer;" (click)="goToPage('services')">Airborne
+                                            Asbestos Fiber
+                                            Counting</a>
+                                    </li>
+                                    <li id="menu-item-2951"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2951">
+                                        <a style="cursor: pointer;" (click)="goToPage('services')">Mold</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-2133"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                <a style="cursor: pointer;" (click)="goToPage('faq')">FAQ</a>
+                            </li>
+                            <li id="menu-item-2133"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                <a style="cursor: pointer;" (click)="goToPage('cocforms')">COC Forms Page</a>
+                            </li>
+                            <li id="menu-item-2133"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                <a style="cursor: pointer;" (click)="goToPage('aboutus')">About Us</a>
+                            </li>
+                            <li id="menu-item-2133"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                <a style="cursor: pointer;" (click)="goToPage('contactus')">Contact Us</a>
+                            </li>
+                            <li id="menu-item-2133"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133">
+                                <a href="https://www.calgary.ca/csps/cema/covid19/response-to-coronavirus.html" target="_blank">COVID-19 Updates</a>
+                            </li>			
+                        </ul>
+                    </nav>
+                </div><!-- .menuPort -->
+            </div><!-- /port -->
+        </div><!-- /menu-holder / bt-below-logo-area -->
+    </div><!-- / inner header for scrolling -->
+</header><!-- /.mainHeader -->

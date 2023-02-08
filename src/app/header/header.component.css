@@ -1,0 +1,15 @@
+.bt-logo-area .logo img{
+    height: 80px;
+}
+.btMenuInitFinished .mainHeader {
+    visibility: initial;
+    opacity: 1;
+    border: solid 1px red;
+}
+.mainHeader{
+    background-color: #ffffff;
+}
+.mainHeader a{
+    color: gray;
+}
+.mainHeader a:hover{color: #156cf0;}
