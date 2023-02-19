@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthorizationService } from './services/authorization.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gls-website-new';
+  constructor(private authenticationService: AuthorizationService){
+    //this.authenticationService.setAccessToken();
+    //this.authenticationService.getAccessToken();
+  }
+  ngAfterContentInit(){
+    //this.authenticationService.getAccessToken();
+  }
 }

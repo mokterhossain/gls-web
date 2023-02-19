@@ -2,8 +2,7 @@
 <div class="bt-content-wrap btClear">
     <section
         class="bt_bb_section gutter bt_bb_vertical_align_top btPageHeadline bt_bb_background_image bt_bb_background_overlay_dark_solid bt_bb_parallax bt-dark-skin "
-        style="background-image:url(../../assets/img/hero-services.png)"
-        data-parallax="0.8" data-parallax-offset="0">
+        style="background-image:url(../../assets/img/hero-services.png)" data-parallax="0.8" data-parallax-offset="0">
         <div class="bt_bb_port port">
             <div class="bt_bb_cell">
                 <div class="bt_bb_cell_inner">
@@ -29,14 +28,14 @@
         <div class="bt-content">
             <div class="bt_bb_wrapper">
                 <section id="bt_bb_section60c2351fd43df" data-parallax="0" data-parallax-offset="0"
-        class="bt_bb_section bt_bb_color_scheme_16 bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_parallax">
-        <div class="bt_bb_port">
-            <div class="bt_bb_cell">
-                <div class="bt_bb_cell_inner">
-                    <div
-                        class="bt_bb_row_wrapper bt_bb_row_width_boxed_1200 bt_bb_row_push_right bt_bb_row_push_left bt_bb_content_wide">
-                        <div
-                            class="bt_bb_row bt_bb_animation_fade_in bt_bb_animation_move_right animated bt_bb_animation_fade_in move_right animated">
+                    class="bt_bb_section bt_bb_color_scheme_16 bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_parallax">
+                    <div class="bt_bb_port">
+                        <div class="bt_bb_cell">
+                            <div class="bt_bb_cell_inner">
+                                <div
+                                    class="bt_bb_row_wrapper bt_bb_row_width_boxed_1200 bt_bb_row_push_right bt_bb_row_push_left bt_bb_content_wide">
+                                    <div
+                                        class="bt_bb_row bt_bb_animation_fade_in bt_bb_animation_move_right animated bt_bb_animation_fade_in move_right animated">
                                         <div class="bt_bb_column col-xl-3 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal btLazyLoadBackground bt_bb_column_background_image bt_bb_details_right-inner bt_bb_details-color_white"
                                             style="position: relative;background-image:url(&#039;../../assets/img/blank.gif&#039;);"
                                             data-background_image_src='../../assets/img/inner_contact_01.jpg'
@@ -212,9 +211,8 @@
                                                                     <h5 class="bt_bb_headline_tag"><span
                                                                             class="bt_bb_headline_content"><span>Working
                                                                                 Hours</span></span></h5>
-                                                                    <div class="bt_bb_headline_subheadline">MON-FRI |
-                                                                        08:00am to 5:00pm<br />
-                                                                        SAT-SUN | ON CALL</div>
+                                                                    <div class="bt_bb_headline_subheadline">
+                                                                        {{contactUsContent.working_hours}}</div>
                                                                 </header>
                                                                 <div
                                                                     class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none">
@@ -233,8 +231,7 @@
                                                                             class="bt_bb_headline_content"><span>Call
                                                                                 Center</span></span></h5>
                                                                     <div class="bt_bb_headline_subheadline">
-                                                                        (403) 452-1003<br />
-                                                                        Give us a free call 24/7</div>
+                                                                        {{contactUsContent.call_center}}</div>
                                                                 </header>
                                                                 <div
                                                                     class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
@@ -257,8 +254,8 @@
                                                                     <h5 class="bt_bb_headline_tag"><span
                                                                             class="bt_bb_headline_content"><span>Location</span></span>
                                                                     </h5>
-                                                                    <div class="bt_bb_headline_subheadline">11-2280 39 AVE NE<br />
-                                                                        CALGARY, AB. T2E 6P7</div>
+                                                                    <div class="bt_bb_headline_subheadline">
+                                                                        {{contactUsContent.location}}</div>
                                                                 </header>
                                                                 <div
                                                                     class="bt_bb_separator bt_bb_top_spacing_small bt_bb_bottom_spacing_normal bt_bb_border_style_none">
@@ -277,7 +274,7 @@
                                                                             class="bt_bb_headline_content"><span>Email
                                                                                 Us</span></span></h5>
                                                                     <div class="bt_bb_headline_subheadline">
-                                                                        customerservice@guardianlab.ca</div>
+                                                                        {{contactUsContent.email_us}}</div>
                                                                 </header>
                                                                 <div
                                                                     class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
@@ -336,10 +333,12 @@
                                                         class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
                                                     </div>
                                                     <div class="bt_bb_button bt_bb_icon_position_left bt_bb_color_scheme_6 bt_bb_style_outline_thin bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
-                                                        data-bt-override-class="{}"><a style="cursor: pointer;" (click)="goToPage('aboutus')"
-                                                            target="_self" class="bt_bb_link"
+                                                        data-bt-override-class="{}"><a style="cursor: pointer;"
+                                                            (click)="goToPage('aboutus')" target="_self"
+                                                            class="bt_bb_link"
                                                             title="More About Guardian Lab Services"><span
-                                                                class="bt_bb_button_text">More About Guardian Lab Services</span></a>
+                                                                class="bt_bb_button_text">More About Guardian Lab
+                                                                Services</span></a>
                                                     </div>
                                                     <div
                                                         class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none bt_bb_border_color_none">
@@ -363,7 +362,8 @@
                                                 <div class="bt_bb_column_content_inner">
                                                     <div
                                                         class="bt_bb_separator bt_bb_bottom_spacing_medium btWithText bt_bb_border_style_solid bt_bb_border_color_light">
-                                                        <span class="bt_bb_separator_text">Opening hours</span></div>
+                                                        <span class="bt_bb_separator_text">Opening hours</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -371,114 +371,27 @@
                                 </div>
                                 <div class="bt_bb_row_wrapper">
                                     <div class="bt_bb_row">
-                                        <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
-                                            data-width="2" data-bt-override-class="{}">
-                                            <div class="bt_bb_column_content">
-                                                <div class="bt_bb_column_content_inner">
-                                                    <header
-                                                        class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
-                                                        data-bt-override-class="{}">
-                                                        <h4 class="bt_bb_headline_tag"><span
-                                                                class="bt_bb_headline_content"><span>Mon</span></span>
-                                                        </h4>
-                                                        <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
-                                                    </header>
-                                                    <div
-                                                        class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                        <ng-container *ngFor="let openingHour of openingHours; let i=index">
+                                            <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
+                                                data-width="2" data-bt-override-class="{}">
+                                                <div class="bt_bb_column_content">
+                                                    <div class="bt_bb_column_content_inner">
+                                                        <header
+                                                            class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
+                                                            data-bt-override-class="{}">
+                                                            <h4 class="bt_bb_headline_tag"><span
+                                                                    class="bt_bb_headline_content"><span>{{openingHour.title}}</span></span>
+                                                            </h4>
+                                                            <div class="bt_bb_headline_subheadline">
+                                                                {{openingHour.operation_hour}}</div>
+                                                        </header>
+                                                        <div
+                                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
-                                            data-width="2" data-bt-override-class="{}">
-                                            <div class="bt_bb_column_content">
-                                                <div class="bt_bb_column_content_inner">
-                                                    <header
-                                                        class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
-                                                        data-bt-override-class="{}">
-                                                        <h4 class="bt_bb_headline_tag"><span
-                                                                class="bt_bb_headline_content"><span>Tue</span></span>
-                                                        </h4>
-                                                        <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
-                                                    </header>
-                                                    <div
-                                                        class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
-                                            data-width="2" data-bt-override-class="{}">
-                                            <div class="bt_bb_column_content">
-                                                <div class="bt_bb_column_content_inner">
-                                                    <header
-                                                        class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
-                                                        data-bt-override-class="{}">
-                                                        <h4 class="bt_bb_headline_tag"><span
-                                                                class="bt_bb_headline_content"><span>Wed</span></span>
-                                                        </h4>
-                                                        <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
-                                                    </header>
-                                                    <div
-                                                        class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
-                                            data-width="2" data-bt-override-class="{}">
-                                            <div class="bt_bb_column_content">
-                                                <div class="bt_bb_column_content_inner">
-                                                    <header
-                                                        class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
-                                                        data-bt-override-class="{}">
-                                                        <h4 class="bt_bb_headline_tag"><span
-                                                                class="bt_bb_headline_content"><span>Thu</span></span>
-                                                        </h4>
-                                                        <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
-                                                    </header>
-                                                    <div
-                                                        class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
-                                            data-width="2" data-bt-override-class="{}">
-                                            <div class="bt_bb_column_content">
-                                                <div class="bt_bb_column_content_inner">
-                                                    <header
-                                                        class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
-                                                        data-bt-override-class="{}">
-                                                        <h4 class="bt_bb_headline_tag"><span
-                                                                class="bt_bb_headline_content"><span>Fri</span></span>
-                                                        </h4>
-                                                        <div class="bt_bb_headline_subheadline">08:00am - 5:00pm</div>
-                                                    </header>
-                                                    <div
-                                                        class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bt_bb_column col-xl-2 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
-                                            data-width="2" data-bt-override-class="{}">
-                                            <div class="bt_bb_column_content">
-                                                <div class="bt_bb_column_content_inner">
-                                                    <header
-                                                        class="bt_bb_headline bt_bb_color_scheme_1 bt_bb_dash_none bt_bb_size_extrasmall bt_bb_subheadline bt_bb_align_inherit"
-                                                        data-bt-override-class="{}">
-                                                        <h4 class="bt_bb_headline_tag"><span
-                                                                class="bt_bb_headline_content"><span>Sat -
-                                                                    Sun</span></span></h4>
-                                                        <div class="bt_bb_headline_subheadline">ON CALL</div>
-                                                    </header>
-                                                    <div
-                                                        class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </ng-container>
                                     </div>
                                 </div>
                             </div>
@@ -498,11 +411,15 @@
                                                 <div class="bt_bb_column_content_inner">
                                                     <div class="bt_bb_google_maps bt_bb_map bt_bb_map_type_interactive"
                                                         data-center="no">
-                                                            <div class="mapouter">
-                                                                <div class="gmap_canvas">
-                                                                    <iframe [src]="this.googleLocationUrl | safe : 'resourceUrl'" width="100%" height="650" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                                                </div>
+                                                        <div class="mapouter">
+                                                            <div class="gmap_canvas">
+                                                                <iframe
+                                                                    [src]="this.googleLocationUrl | safe : 'resourceUrl'"
+                                                                    width="100%" height="650" id="gmap_canvas"
+                                                                    frameborder="0" scrolling="no" marginheight="0"
+                                                                    marginwidth="0"></iframe>
                                                             </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,16 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SafePipe } from './safe.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './authorization/login/login.component';
+import { DashboardComponent } from './CMS/dashboard/dashboard.component';
+import { ManageHomeContentComponent } from './CMS/manage-home-content/manage-home-content.component';
+import { ManageServiceContentComponent } from './CMS/manage-service-content/manage-service-content.component';
+import { ManageFaqContentComponent } from './CMS/manage-faq-content/manage-faq-content.component';
+import { ManageAboutUsContentComponent } from './CMS/manage-about-us-content/manage-about-us-content.component';
+import { ManageContactUsContentComponent } from './CMS/manage-contact-us-content/manage-contact-us-content.component';
+import { TestComponent } from './test/test.component';
+import { HeaderNavComponent } from './CMS/shared/header-nav/header-nav.component';
+import { LeftNavComponent } from './CMS/shared/left-nav/left-nav.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +36,25 @@ import { HttpClientModule } from '@angular/common/http';
     ContactUsComponent,
     HeaderComponent,
     FooterComponent,
-    SafePipe
+    SafePipe,
+    LoginComponent,
+    DashboardComponent,
+    ManageHomeContentComponent,
+    ManageServiceContentComponent,
+    ManageFaqContentComponent,
+    ManageAboutUsContentComponent,
+    ManageContactUsContentComponent,
+    TestComponent,
+    HeaderNavComponent,
+    LeftNavComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

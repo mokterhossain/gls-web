@@ -1,0 +1,78 @@
+<div class="container-fluid g-0">
+    <app-header-nav [isLoggedIn]="authService.isUserLoggedIn()"></app-header-nav>
+
+    <section class="vh-1000" style="background-color: #03175B;">
+        <div class="container py-0 h-1000">
+            <div class="row d-flex justify-content-center align-items-center h-1000">
+                <div class="col col-xl-11">
+                    <div class="card" style="border-radius: 1rem;margin-top: 60px;">
+                        <div class="row g-0">
+                            <div class="page-header">
+                                <h1>Manage Contact Us</h1>
+                            </div>
+                            <div class="col-md-12 col-lg-12 d-flex align-items-center">
+                                <div class="card-body p-4 p-lg-5 text-black">
+                                    <form [formGroup]="formValue">
+                                        <div class="form-outline mb-4"><b>Contact Us</b>
+                                            <hr>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form2Example17">Working Hours</label>
+                                            <textarea class="form-control form-control-lg"
+                                                formControlName="working_hours"></textarea>
+
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form2Example17">Location</label>
+                                            <textarea class="form-control form-control-lg"
+                                                formControlName="location"></textarea>
+
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form2Example17">Call Center</label>
+                                            <textarea class="form-control form-control-lg"
+                                                formControlName="call_center"></textarea>
+
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form2Example17">Email Us</label>
+                                            <textarea class="form-control form-control-lg"
+                                                formControlName="email_us"></textarea>
+
+                                        </div>
+                                        <!-- <div formArrayName="faqs">
+                                        <div *ngFor="let course of getFaq(formValue); let i = index"
+                                            [formGroupName]="i">
+                                            <div>
+                                                <b>FAQ {{i+1}}</b>
+                                                <div class="form-outline mb-4">
+                                                    <label class="form-label" for="form2Example17">Title</label>
+                                                    <input type="text" id="form2Example17"
+                                                        class="form-control form-control-lg" formControlName="title" />
+                                                </div>
+                                                <div class="form-outline mb-4">
+                                                    <label class="form-label" for="form2Example17">Description</label>
+                                                    <textarea class="form-control form-control-lg"
+                                                        formControlName="content"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="container bg-light">
+                                <div class="col-md-12 text-center mb-4">
+                                    <button type="button" class="btn btn-primary"
+                                        (click)="handleSubmit()">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

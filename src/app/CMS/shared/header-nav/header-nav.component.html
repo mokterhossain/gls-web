@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="side-nav-button p-2 me-3 text-light">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="navbar-brand px-3" href="#">Guradian Lab Services CMS</a>
+    <!-- Example split danger button -->
+    <div class="btn-group" *ngIf="isLoggedIn">
+        <button type="button" class="btn btn-secondary">Manage Content</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" (click)="goToPage('manage-home')">Home</a>
+            <a class="dropdown-item" (click)="goToPage('manage-services')">Service</a>
+            <a class="dropdown-item" (click)="goToPage('manage-faq')">FAQ</a>
+            <a class="dropdown-item" (click)="goToPage('manage-about-us')">About us</a>
+            <a class="dropdown-item" (click)="goToPage('manage-contact-us')">Contact us</a>
+            <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a> -->
+        </div>
+    </div>
+    <ul class="nav navbar-nav navbar-right ms-auto px-5" *ngIf="isLoggedIn">
+        <li class="nav-item"><a class="nav-link" href="new_user"><span
+                    class="glyphicon glyphicon-user fontawesome-lock"></span> &nbsp;</a></li>
+        <li class="nav-item"><a class="nav-link" (click)="logout()"><span class="glyphicon glyphicon-log-in"></span>
+                <b>Logout</b></a>
+        </li>
+    </ul>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="side-nav-button p-2 me-3 text-light">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="navbar-brand" href="#">Guradian Lab Services CMS</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active dropdpwn">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Manage Content</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item">Home</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav> -->

@@ -56,14 +56,11 @@
                                                         <!-- Over 20
                                                                         Years of Experience. We'll Ensure You Always
                                                                         Get the Best Possible Results -->
-                                                         Guardian Lab Services has been providing quality laboratory testing for home-owners, home inspectors, independent contractors and realtors since 2017.
+                                                        {{aboutUsContent.title}}
                                                     </span></span>
                                             </h3>
                                             <div class="bt_bb_headline_subheadline">
-                                                Quality control is monitored quarterly through interlaboratory and intralaboratory comparison as well as
-proficiency testing administered by the Canadian Association for Laboratory
-Accreditation (CALA) which is an internationally recognized accreditation for
-laboratories. Guardian Lab Services is accredited under CALA Membership Number 4133
+                                                {{aboutUsContent.sub_title}}
                                                 <!-- Our processes
                                                                 will be tailored to best fit your needs, and we will
                                                                 assist you by answering your questions and helping
@@ -74,9 +71,7 @@ laboratories. Guardian Lab Services is accredited under CALA Membership Number 4
                                             class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
                                         </div>
                                         <div class="bt_bb_text">
-                                            <p>Final results are confidentially reported to
-                                                clients. At Guardian Lab we provide the highest quality of service with competitive
-                                                pricing.</p>
+                                            <p>{{aboutUsContent.content}}</p>
                                         </div>
                                         <div
                                             class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
@@ -136,8 +131,9 @@ laboratories. Guardian Lab Services is accredited under CALA Membership Number 4
                                             data-bt-override-class="{}">
                                             <h3 class="bt_bb_headline_tag"><span
                                                     class="bt_bb_headline_superheadline">OUR TEAM</span><span
-                                                    class="bt_bb_headline_content"><span>We'll Ensure You Always Get the
-                                                        Best Results</span></span></h3>
+                                                    class="bt_bb_headline_content"><span>{{aboutUsContent.our_team_title}}
+                                                    </span></span>
+                                            </h3>
                                         </header>
                                         <div
                                             class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
@@ -155,168 +151,52 @@ laboratories. Guardian Lab Services is accredited under CALA Membership Number 4
                     </div>
                     <div class="bt_bb_row_wrapper">
                         <div class="bt_bb_row" data-structure="4-4-4">
-                            <div class="bt_bb_column col-xl-3 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate animated"
-                                data-width="4" data-bt-override-class="{}">
-                                <div class="bt_bb_column_content">
-                                    <div class="bt_bb_column_content_inner">
-                                        <div
-                                            class="bt_bb_image bt_bb_shape_hexagon bt_bb_align_inherit bt_bb_hover_style_zoom-in bt_bb_content_display_always bt_bb_content_align_middle">
-                                            <!-- <a href="#"
+
+                            <ng-container *ngFor="let ourTeam of ourTeam; let i= index">
+                                <div class="bt_bb_column col-xl-3 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate animated"
+                                    data-width="4" data-bt-override-class="{}">
+                                    <div class="bt_bb_column_content">
+                                        <div class="bt_bb_column_content_inner">
+                                            <div
+                                                class="bt_bb_image bt_bb_shape_hexagon bt_bb_align_inherit bt_bb_hover_style_zoom-in bt_bb_content_display_always bt_bb_content_align_middle">
+                                                <!-- <a href="#"
                                                 target="_self" title="Dr. Nicholas King"><img
                                                     src="../../assets/img/anonymous-man.png"
                                                     data-full_image_src="../../assets/img/anonymous-man.png"
                                                     data-image_src="../../assets/img/anonymous-man.png"
                                                     title="William Barnes" alt="William Barnes"
                                                     class="btLazyLoadImage btLazyLoaded"></a> -->
-                                                </div>
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
-                                        </div>
-                                        <header
-                                            class="bt_bb_headline bt_bb_dash_none bt_bb_size_medium bt_bb_superheadline bt_bb_align_inherit"
-                                            data-bt-override-class="{}">
-                                            <h5 class="bt_bb_headline_tag"><span
-                                                    class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Manager</span><span class="bt_bb_headline_content"><span>William Barnes</span></span></h5><span>ARM CEM CMI</span><br>
-                                                    <span>Marketing, Quality Assurance and Environmental Consultant</span>
-                                        </header>
-                                        <div class="bt_bb_separator bt_bb_bottom_spacing_20 bt_bb_border_style_none">
-                                        </div>
-                                        <!-- <div class="bt_bb_button bt_bb_icon_position_right bt_bb_color_scheme_3 bt_bb_style_clean bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
+                                            </div>
+                                            <div
+                                                class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
+                                            </div>
+                                            <header
+                                                class="bt_bb_headline bt_bb_dash_none bt_bb_size_medium bt_bb_superheadline bt_bb_align_inherit"
+                                                data-bt-override-class="{}">
+                                                <h5 class="bt_bb_headline_tag"><span
+                                                        class="bt_bb_headline_superheadline"
+                                                        style="text-transform: uppercase;">{{ourTeam.title}}</span><span
+                                                        class="bt_bb_headline_content"><span>{{ourTeam.name}}</span></span>
+                                                </h5><span>{{ourTeam.degree}}</span><br>
+                                                <span>{{ourTeam.designation}}</span>
+                                            </header>
+                                            <div
+                                                class="bt_bb_separator bt_bb_bottom_spacing_20 bt_bb_border_style_none">
+                                            </div>
+                                            <!-- <div class="bt_bb_button bt_bb_icon_position_right bt_bb_color_scheme_3 bt_bb_style_clean bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
                                             data-bt-override-class="{}"><a
                                                 href="https://novalab.bold-themes.com/lab-s/about-us/about-me/"
                                                 target="_self" class="bt_bb_link" title="Go to full bio"><span
                                                     class="bt_bb_button_text">Go to full bio</span><span
                                                     data-ico-fontawesome5solid="" class="bt_bb_icon_holder"></span></a>
                                         </div> -->
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                            <div
+                                                class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bt_bb_column col-xl-3 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate animated"
-                                data-width="4" data-bt-override-class="{}">
-                                <div class="bt_bb_column_content">
-                                    <div class="bt_bb_column_content_inner">
-                                        <div
-                                            class="bt_bb_image bt_bb_shape_hexagon bt_bb_align_inherit bt_bb_hover_style_zoom-in bt_bb_content_display_always bt_bb_content_align_middle">
-                                            <!-- <a href="#"
-                                                target="_self" title="Dr. Nicholas King"><img
-                                                    src="../../assets/img/anonymous-man.png"
-                                                    data-full_image_src="../../assets/img/anonymous-man.png"
-                                                    data-image_src="../../assets/img/anonymous-man.png"
-                                                    title="William Barnes" alt="William Barnes"
-                                                    class="btLazyLoadImage btLazyLoaded"></a> -->
-                                                </div>
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
-                                        </div>
-                                        <header
-                                            class="bt_bb_headline bt_bb_dash_none bt_bb_size_medium bt_bb_superheadline bt_bb_align_inherit"
-                                            data-bt-override-class="{}">
-                                            <h5 class="bt_bb_headline_tag"><span
-                                                    class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Lab Manager</span><span class="bt_bb_headline_content"><span>Sadiqur Rahman</span></span></h5>
-                                                    <span>M.Sc (Chemistry)</span><br>
-                                                    <span>Senior Analyst, and Quality Assurance</span>
-                                        </header>
-                                        <div class="bt_bb_separator bt_bb_bottom_spacing_20 bt_bb_border_style_none">
-                                        </div>
-                                        <!-- <div class="bt_bb_button bt_bb_icon_position_right bt_bb_color_scheme_3 bt_bb_style_clean bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
-                                            data-bt-override-class="{}"><a
-                                                href="https://novalab.bold-themes.com/lab-s/about-us/about-me/"
-                                                target="_self" class="bt_bb_link" title="Go to full bio"><span
-                                                    class="bt_bb_button_text">Go to full bio</span><span
-                                                    data-ico-fontawesome5solid="" class="bt_bb_icon_holder"></span></a>
-                                        </div> -->
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bt_bb_column col-xl-3 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate animated"
-                                data-width="4" data-bt-override-class="{}">
-                                <div class="bt_bb_column_content">
-                                    <div class="bt_bb_column_content_inner">
-                                        <div
-                                            class="bt_bb_image bt_bb_shape_hexagon bt_bb_align_inherit bt_bb_hover_style_zoom-in bt_bb_content_display_always bt_bb_content_align_middle">
-                                            <!-- <a href="#"
-                                                target="_self" title="Dr. Nicholas King"><img
-                                                    src="../../assets/img/anonymous-man.png"
-                                                    data-full_image_src="../../assets/img/anonymous-man.png"
-                                                    data-image_src="../../assets/img/anonymous-man.png"
-                                                    title="William Barnes" alt="William Barnes"
-                                                    class="btLazyLoadImage btLazyLoaded"></a> -->
-                                                </div>
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
-                                        </div>
-                                        <header
-                                            class="bt_bb_headline bt_bb_dash_none bt_bb_size_medium bt_bb_superheadline bt_bb_align_inherit"
-                                            data-bt-override-class="{}">
-                                            
-                                            <h5 class="bt_bb_headline_tag">
-                                                <span
-                                                    class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Marketing Manager/Lab Analyst</span><span class="bt_bb_headline_content"><span>Stephanie Clooten</span></span></h5>
-                                                    <span>B.Sc (Environmental Science) </span><br>
-                                                    <span>Marketing Manager and Lab Analyst</span>
-                                        </header>
-                                        <div class="bt_bb_separator bt_bb_bottom_spacing_20 bt_bb_border_style_none">
-                                        </div>
-                                        <!-- <div class="bt_bb_button bt_bb_icon_position_right bt_bb_color_scheme_3 bt_bb_style_clean bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
-                                            data-bt-override-class="{}"><a
-                                                href="https://novalab.bold-themes.com/lab-s/about-us/about-me/"
-                                                target="_self" class="bt_bb_link" title="Go to full bio"><span
-                                                    class="bt_bb_button_text">Go to full bio</span><span
-                                                    data-ico-fontawesome5solid="" class="bt_bb_icon_holder"></span></a>
-                                        </div> -->
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bt_bb_column col-xl-3 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate animated"
-                                data-width="4" data-bt-override-class="{}">
-                                <div class="bt_bb_column_content">
-                                    <div class="bt_bb_column_content_inner">
-                                        <div
-                                            class="bt_bb_image bt_bb_shape_hexagon bt_bb_align_inherit bt_bb_hover_style_zoom-in bt_bb_content_display_always bt_bb_content_align_middle">
-                                            <!-- <a href="#"
-                                                target="_self" title="Dr. Nicholas King"><img
-                                                    src="../../assets/img/anonymous-female.png"
-                                                    data-full_image_src="../../assets/img/anonymous-female.png"
-                                                    data-image_src="../../assets/img/anonymous-female.png"
-                                                    title="William Barnes" alt="William Barnes"
-                                                    class="btLazyLoadImage btLazyLoaded"></a> -->
-                                                </div>
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none">
-                                        </div>
-                                        <header
-                                            class="bt_bb_headline bt_bb_dash_none bt_bb_size_medium bt_bb_superheadline bt_bb_align_inherit"
-                                            data-bt-override-class="{}">
-                                            
-                                            <h5 class="bt_bb_headline_tag"><span
-                                                    class="bt_bb_headline_superheadline" style="text-transform: uppercase;">Senior Analyst</span><span class="bt_bb_headline_content"><span>Sharmin Sultana</span></span></h5>
-                                                    <span>BBA and MBA (Business)</span><br>
-                                                    <span>Senior Analyst and Quality Assurance</span>
-                                        </header>
-                                        <div class="bt_bb_separator bt_bb_bottom_spacing_20 bt_bb_border_style_none">
-                                        </div>
-                                        <!-- <div class="bt_bb_button bt_bb_icon_position_right bt_bb_color_scheme_3 bt_bb_style_clean bt_bb_size_medium bt_bb_width_inline bt_bb_shape_inherit bt_bb_align_inherit"
-                                            data-bt-override-class="{}"><a
-                                                href="https://novalab.bold-themes.com/lab-s/about-us/about-me/"
-                                                target="_self" class="bt_bb_link" title="Go to full bio"><span
-                                                    class="bt_bb_button_text">Go to full bio</span><span
-                                                    data-ico-fontawesome5solid="" class="bt_bb_icon_holder"></span></a>
-                                        </div> -->
-                                        <div
-                                            class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </ng-container>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Title} from "@angular/platform-browser";
+import { Router } from '@angular/router';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-faq',
@@ -7,22 +9,32 @@ import {Title} from "@angular/platform-browser";
   styleUrls: ['./faq.component.css']
 })
 export class FaqComponent implements OnInit {
-
-  constructor(private titleService:Title) {
+  faqContent: any;
+  constructor(private titleService:Title, private router: Router, private api: ApiService) {
     this.titleService.setTitle("FAQ");
+    
    }
 
-  ngOnInit(): void {
-    
-      const element = document.querySelector('.bt_bb_accordion_item');
-      let elementList = document.querySelectorAll('.bt_bb_accordion_item');
-      //alert(elementList.length);
-      for(let i=0; i< elementList.length; i++){
-          elementList[i].addEventListener("click", () => {
-            this.manageAccordion(elementList, i);
-        });
-      }  
-
+  ngOnInit(): void {    
+    this.loadFaqContent();
+  }
+  loadFaqContent(){
+    this.api.getFaq().subscribe({
+      next: (res) =>{
+        //alert("hi");
+        console.log(res);
+        this.faqContent = res[0]?.faqs;
+      },
+      error: (err) => {
+        alert(err);
+      }
+    });
+  }
+  handleAccordion(index: any){
+    const element = document.querySelector('.bt_bb_accordion_item');
+    let elementList = document.querySelectorAll('.bt_bb_accordion_item');
+    //alert(elementList.length);
+    this.manageAccordion(elementList, index);
   }
   manageAccordion(elementList: any, index: any){
     for(let i=0; i< elementList.length; i++){
