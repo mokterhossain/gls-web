@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 import { AuthGuardService } from 'src/app/services/auth-guard.service';
@@ -12,13 +12,13 @@ import { AuthGuardService } from 'src/app/services/auth-guard.service';
 export class ManageFaqContentComponent implements OnInit {
 
   FaqContent: any;
-  formValue !: FormGroup;
-  constructor(private router: Router, private api: ApiService, private formBuilder: FormBuilder, public authService: AuthGuardService) { 
+  formValue !: UntypedFormGroup;
+  constructor(private router: Router, private api: ApiService, private formBuilder: UntypedFormBuilder, public authService: AuthGuardService) { 
     if (!authService.isUserLoggedIn()) {
       this.router.navigate(['/login']);
     }
     this.formValue = this.formBuilder.group({
-      faqs: new FormArray([
+      faqs: new UntypedFormArray([
         this.initFaq(),
       ]),
     });
@@ -32,7 +32,7 @@ export class ManageFaqContentComponent implements OnInit {
     this.api.getFaq().subscribe({
       next: (res) =>{
         this.FaqContent = res;
-        let arrFaq = new FormArray([]);
+        let arrFaq = new UntypedFormArray([]);
         for(var i=0; i< this.FaqContent[0].faqs.length; i++){
           arrFaq.push(this.formBuilder.group({ 
             title: this.FaqContent[0].faqs[i].title,
@@ -49,9 +49,9 @@ export class ManageFaqContentComponent implements OnInit {
     });
   }
   initFaq() {
-    return new FormGroup({
-      title: new FormControl(''),
-      content: new FormControl(''),
+    return new UntypedFormGroup({
+      title: new UntypedFormControl(''),
+      content: new UntypedFormControl(''),
     });
   }
   getFaq(form: any) {

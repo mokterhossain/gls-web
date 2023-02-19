@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms'
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms'
 import { AuthGuardService } from 'src/app/services/auth-guard.service';
 
 @Component({
@@ -11,8 +11,8 @@ import { AuthGuardService } from 'src/app/services/auth-guard.service';
 })
 export class ManageHomeContentComponent implements OnInit {
   homeContent: any;
-  formValue !: FormGroup;
-  constructor(private router: Router, private api: ApiService, private formBuilder: FormBuilder, public authService: AuthGuardService) { 
+  formValue !: UntypedFormGroup;
+  constructor(private router: Router, private api: ApiService, private formBuilder: UntypedFormBuilder, public authService: AuthGuardService) { 
     if (!authService.isUserLoggedIn()) {
       this.router.navigate(['/login']);
     }
@@ -20,45 +20,45 @@ export class ManageHomeContentComponent implements OnInit {
       banner_headline: [''],
       banner_content: [''],
       benefits_title: [''],
-      Our_Expertise: new FormArray([
+      Our_Expertise: new UntypedFormArray([
         this.initExpertise(),
       ]),
-      hours_of_operation: new FormArray([
+      hours_of_operation: new UntypedFormArray([
         this.initHoursOfOperation(),
       ]),
-      about_us: new FormArray([
+      about_us: new UntypedFormArray([
         this.initAboutUs(),
       ]),
       
-      benefits: new FormArray([
+      benefits: new UntypedFormArray([
         this.initBenefits(),
       ]),
     });
   }
   initExpertise() {
-    return new FormGroup({
-      name: new FormControl(''),
-      title: new FormControl(''),
-      content: new FormControl(''),
+    return new UntypedFormGroup({
+      name: new UntypedFormControl(''),
+      title: new UntypedFormControl(''),
+      content: new UntypedFormControl(''),
     });
   }
   initHoursOfOperation() {
-    return new FormGroup({
-      title: new FormControl(''),
-      operation_hour: new FormControl(''),
+    return new UntypedFormGroup({
+      title: new UntypedFormControl(''),
+      operation_hour: new UntypedFormControl(''),
     });
   }
   initAboutUs() {
-    return new FormGroup({
-      title: new FormControl(''),
-      sub_title: new FormControl(''),
-      content: new FormControl(''),
+    return new UntypedFormGroup({
+      title: new UntypedFormControl(''),
+      sub_title: new UntypedFormControl(''),
+      content: new UntypedFormControl(''),
     });
   }
   initBenefits() {
-    return new FormGroup({
-      title: new FormControl(''),
-      content: new FormControl(''),
+    return new UntypedFormGroup({
+      title: new UntypedFormControl(''),
+      content: new UntypedFormControl(''),
     });
   }
   ngOnInit(): void {
@@ -72,7 +72,7 @@ export class ManageHomeContentComponent implements OnInit {
         console.log(res);
         this.homeContent = res;
         let control = this.formBuilder.array([]);
-        let arrExpertise = new FormArray([]);
+        let arrExpertise = new UntypedFormArray([]);
         for(var i=0; i< this.homeContent[0].Our_Expertise.length; i++){
           arrExpertise.push(this.formBuilder.group({ 
             name: this.homeContent[0].Our_Expertise[i].name,
@@ -82,7 +82,7 @@ export class ManageHomeContentComponent implements OnInit {
           //debugger;
           this.formValue.setControl("Our_Expertise",arrExpertise);
         }
-        let arrHoursOfOperation = new FormArray([]);
+        let arrHoursOfOperation = new UntypedFormArray([]);
         for(var i=0; i< this.homeContent[0].hours_of_operation.length; i++){
           arrHoursOfOperation.push(this.formBuilder.group({ 
             title: this.homeContent[0].hours_of_operation[i].title,
@@ -91,7 +91,7 @@ export class ManageHomeContentComponent implements OnInit {
           //debugger;
           this.formValue.setControl("hours_of_operation",arrHoursOfOperation);
         }
-        let arrAboutUs = new FormArray([]);
+        let arrAboutUs = new UntypedFormArray([]);
         arrAboutUs.push(this.formBuilder.group({ 
           title: this.homeContent[0].about_us.title,
           sub_title: this.homeContent[0].about_us.sub_title,
@@ -99,7 +99,7 @@ export class ManageHomeContentComponent implements OnInit {
         }));
         //debugger;
         this.formValue.setControl("about_us",arrAboutUs);
-        let arrBenefits = new FormArray([]);
+        let arrBenefits = new UntypedFormArray([]);
         for(var i=0; i< this.homeContent[0].benefits.length; i++){
           arrBenefits.push(this.formBuilder.group({ 
             title: this.homeContent[0].benefits[i].title,

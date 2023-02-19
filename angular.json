@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "gls-website-new"
+  "cli": {
+    "analytics": false
+  }
 }

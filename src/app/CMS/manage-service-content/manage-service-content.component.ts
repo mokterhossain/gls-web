@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 import { AuthGuardService } from 'src/app/services/auth-guard.service';
@@ -11,13 +11,13 @@ import { AuthGuardService } from 'src/app/services/auth-guard.service';
 })
 export class ManageServiceContentComponent implements OnInit {
   serviceContent: any;
-  formValue !: FormGroup;
-  constructor(private router: Router, private api: ApiService, private formBuilder: FormBuilder, public authService: AuthGuardService) { 
+  formValue !: UntypedFormGroup;
+  constructor(private router: Router, private api: ApiService, private formBuilder: UntypedFormBuilder, public authService: AuthGuardService) { 
     if (!authService.isUserLoggedIn()) {
       this.router.navigate(['/login']);
     }
     this.formValue = this.formBuilder.group({
-      services: new FormArray([
+      services: new UntypedFormArray([
         this.initService(),
       ]),
     });
@@ -31,7 +31,7 @@ export class ManageServiceContentComponent implements OnInit {
     this.api.getOurServices().subscribe({
       next: (res) =>{
         this.serviceContent = res;
-        let arrService = new FormArray([]);
+        let arrService = new UntypedFormArray([]);
         for(var i=0; i< this.serviceContent[0].services.length; i++){
           arrService.push(this.formBuilder.group({ 
             name: this.serviceContent[0].services[i].name,
@@ -50,11 +50,11 @@ export class ManageServiceContentComponent implements OnInit {
     });
   }
   initService() {
-    return new FormGroup({
-      name: new FormControl(''),
-      title: new FormControl(''),
-      sub_heading: new FormControl(''),
-      description: new FormControl(''),
+    return new UntypedFormGroup({
+      name: new UntypedFormControl(''),
+      title: new UntypedFormControl(''),
+      sub_heading: new UntypedFormControl(''),
+      description: new UntypedFormControl(''),
     });
   }
   getService(form: any) {

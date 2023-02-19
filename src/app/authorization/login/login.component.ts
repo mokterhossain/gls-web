@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms'
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms'
 import { Router } from '@angular/router';
 import { AuthorizationService } from 'src/app/services/authorization.service';
 
@@ -10,9 +10,9 @@ import { AuthorizationService } from 'src/app/services/authorization.service';
 })
 export class LoginComponent implements OnInit {
 
-  formValue !: FormGroup;
+  formValue !: UntypedFormGroup;
   isLoggedIn = false;
-  constructor(private formBuilder: FormBuilder, private authorizationService: AuthorizationService, private router: Router) { }
+  constructor(private formBuilder: UntypedFormBuilder, private authorizationService: AuthorizationService, private router: Router) { }
 
   ngOnInit(): void {
     this.formValue = this.formBuilder.group({
