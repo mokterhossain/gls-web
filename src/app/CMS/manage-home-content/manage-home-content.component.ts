@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 import { UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms'
 import { AuthGuardService } from 'src/app/services/auth-guard.service';
+import { SnackBarService } from 'src/app/services/snack-bar.service';
 
 @Component({
   selector: 'app-manage-home-content',
@@ -12,7 +13,8 @@ import { AuthGuardService } from 'src/app/services/auth-guard.service';
 export class ManageHomeContentComponent implements OnInit {
   homeContent: any;
   formValue !: UntypedFormGroup;
-  constructor(private router: Router, private api: ApiService, private formBuilder: UntypedFormBuilder, public authService: AuthGuardService) { 
+  constructor(private router: Router, private api: ApiService, private formBuilder: UntypedFormBuilder, public authService: AuthGuardService
+    ,private alert: SnackBarService) { 
     if (!authService.isUserLoggedIn()) {
       this.router.navigate(['/login']);
     }
@@ -137,8 +139,15 @@ export class ManageHomeContentComponent implements OnInit {
   handleSubmit(){
     //debugger;
     const formValue = this.formValue.value;
-    this.api.updateHomeContent(formValue, 1).subscribe((data:any)=>{
-      debugger;
+    this.api.updateHomeContent(formValue, 1).subscribe({
+      next: (data) =>{
+        if(data){
+          this.alert.success("Successfully saved!", true);
+        }
+      },
+      error: (err) => {
+        this.alert.danger("Failed to save your data!", true);
+      }
     });
   }
 

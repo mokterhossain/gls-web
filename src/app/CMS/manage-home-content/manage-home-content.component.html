@@ -51,8 +51,22 @@
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label"
                                                             for="form2Example17">Description</label>
-                                                        <textarea class="form-control form-control-lg"
-                                                            formControlName="content"></textarea>
+                                                        <!-- <textarea class="form-control form-control-lg"
+                                                            formControlName="content"></textarea> -->
+                                                        <editor formControlName="content"
+                                                            apiKey="s9vxmbg2712vq9lvade315tv5ybmi73uroug9tuvn7mexbxo"
+                                                            [init]="{
+                                                                height: 500,
+                                                                menubar: false,
+                                                                plugins: [
+                                                                  'lists'
+                                                                ],
+                                                                toolbar:
+                                                                  'bullist numlist | undo redo | formatselect | bold italic backcolor | \
+                                                                  alignleft aligncenter alignright alignjustify | \
+                                                                removeformat | help'
+                                                              }">
+                                                        </editor>
                                                     </div>
                                                 </div>
                                             </div>

@@ -24,6 +24,8 @@ import { ManageContactUsContentComponent } from './CMS/manage-contact-us-content
 import { TestComponent } from './test/test.component';
 import { HeaderNavComponent } from './CMS/shared/header-nav/header-nav.component';
 import { LeftNavComponent } from './CMS/shared/left-nav/left-nav.component';
+import { EditorModule } from "@tinymce/tinymce-angular";
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -54,8 +56,13 @@ import { LeftNavComponent } from './CMS/shared/left-nav/left-nav.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    EditorModule,
+    MatSnackBarModule
     
   ],
+  exports: [
+    MatSnackBarModule
+  ]
   providers: [],
   bootstrap: [AppComponent]
 })
